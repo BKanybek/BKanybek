@@ -1,0 +1,128 @@
+@import "../../../Variables/Variables.scss";
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: $navBackgroundColor;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: "nav-left nav-right";
+    color: #fff;
+}
+
+.nav-left{
+    grid-area: nav-left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    cursor: pointer;
+    span{
+        margin-top: 5px;
+        color: $yellowColor;
+        font-family: $robotoFont;
+        font-weight: 300;
+    }
+}
+
+.nav-right{
+    grid-area: nav-right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: $latoFont;
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        .nav-item{
+            margin-left: 18px;
+            cursor: pointer;
+            color: $yellowColor;
+            input{
+                background-color: $yellowColor;
+                border-radius: 10px;
+                border: none;
+                &::placeholder{
+                    color: #000;
+                }
+            }
+            &::last-child{
+                font-weight: 700;
+            }
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-color: $yellowColor;
+                transition: 1s ease-in-out;
+            }
+        }
+        @media all and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .nav-btn{
+        display: none;
+        button{
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            img{
+                width: 30px;
+                margin-top: 8px;
+            }
+        }
+        @media all and (max-width: 992px) {
+            display: block;
+        }
+    }
+}
+
+.navbar-mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    z-index: 1;
+    li{
+        font-size: 32px;
+        list-style: none;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+        input{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background: $yellowColor;
+            &::placeholder{
+                color: #000;
+            }
+        }
+    }
+    @media all and (max-width: 992px){
+        display: block;
+    }
+}
+
+.cancel-block{
+    text-align: end;
+    padding-top: 10px;
+    span{
+        cursor: pointer;
+        color: $yellowColor;
+        font-size: 42px;
+        margin-top: 15px;
+    }
+}

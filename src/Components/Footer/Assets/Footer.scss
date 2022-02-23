@@ -1,0 +1,46 @@
+@import "../../../Variables/Variables.scss";
+
+.footer{
+    background: #20232a;
+    padding: 50px 0;
+}
+
+.footer-logo{
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    align-items: center;
+    img{
+        cursor: pointer;
+    }
+    span{
+        width: 150px;
+        cursor: pointer;
+        margin-top: 5px;
+        color: #fff;
+        font-family: $robotoFont;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.footer-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    ul{
+        list-style: none;
+        li{
+            font-family: $robotoFont;
+            font-weight: 300;
+            font-size: 20px;
+            padding: 5px 0;
+            color: #fff;
+            &:first-child{
+                font-weight: 700;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

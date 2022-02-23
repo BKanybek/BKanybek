@@ -1,0 +1,41 @@
+@import '../../../Variables/Variables.scss';
+
+.intro{
+    grid-area: intro;
+    overflow: hidden;
+    h1{
+        font-size: 42px;
+        padding: 0 0 40px 0;
+        font-family: $latoFont;
+    }
+    .intro-desc{
+        font-family: $latoFont;
+        font-weight: 500;
+        color: #6d6d6d;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    hr{
+        margin: 70px 0;
+    }
+}
+
+.info-image{
+    width: 70%;
+    border-radius: 30px;
+    margin: 40px 0 60px;
+}
+
+.explonation{
+    font-family: $latoFont;
+    line-height: 19.5px;
+    font-size: 16px;
+}
+
+.begin{
+    h2{
+        font-family: $latoFont;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+}

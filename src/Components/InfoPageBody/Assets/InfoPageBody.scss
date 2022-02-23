@@ -1,0 +1,30 @@
+@import "../../../Variables/Variables.scss";
+
+.home-page-body{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-areas: 'intro sidebar';
+    padding-top: 40px;
+    @media all and (max-width: 992px){
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sidebar' 'intro';
+    }
+}
+
+.edit-and-add{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    font-family: $montserratFont;
+    font-size: 18px;
+    margin-bottom: 30px;
+    a{
+        align-items: center;
+        justify-content: start;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        @media all and (max-width: 479px){
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.footer {
+  background: #20232a;
+  padding: 50px 0;
+}
+
+.footer-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 88px 1fr;
+      grid-template-columns: 88px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo img {
+  cursor: pointer;
+}
+
+.footer-logo span {
+  width: 150px;
+  cursor: pointer;
+  margin-top: 5px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.footer-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-list ul {
+  list-style: none;
+}
+
+.footer-list ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.footer-list ul li:first-child {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=Footer.css.map */

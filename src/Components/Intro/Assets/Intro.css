@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+.intro {
+  grid-area: intro;
+  overflow: hidden;
+}
+
+.intro h1 {
+  font-size: 42px;
+  padding: 0 0 40px 0;
+  font-family: "lato", sans-serif;
+}
+
+.intro .intro-desc {
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+  color: #6d6d6d;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.intro hr {
+  margin: 70px 0;
+}
+
+.info-image {
+  width: 70%;
+  border-radius: 30px;
+  margin: 40px 0 60px;
+}
+
+.explonation {
+  font-family: "lato", sans-serif;
+  line-height: 19.5px;
+  font-size: 16px;
+}
+
+.begin h2 {
+  font-family: "lato", sans-serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=Intro.css.map */
